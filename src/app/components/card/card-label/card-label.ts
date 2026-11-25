@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
 	imports: [],
@@ -6,4 +6,7 @@ import { Component } from '@angular/core';
 	styleUrl: './card-label.css',
 	templateUrl: './card-label.html',
 })
-export class CardLabel {}
+export class CardLabel {
+	@Input()
+	gameLabel: string = '';
+}
