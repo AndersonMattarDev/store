@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
 	imports: [],
@@ -6,4 +6,9 @@ import { Component } from '@angular/core';
 	styleUrl: './card-pricing.css',
 	templateUrl: './card-pricing.html',
 })
-export class CardPricing {}
+export class CardPricing {
+	@Input()
+	gameType: string = 'digital PS4';
+	@Input()
+	gamePrice: string = 'R$ 399,90';
+}
